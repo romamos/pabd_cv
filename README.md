@@ -31,8 +31,11 @@ Predictive analytics practice repo for computer vision students
 **Результат:** 
 В проекте подключен dvc, в ветке main  . 
 
-4. CLI python. 
-[Обучение модели.](https://keras.io/examples/vision/image_classification_from_scratch/)
+4. Обучение модели.  
+CLI python.  
+Пайплайн предобработки данных.  
+Сохранение модели после обучения и интеграция с сервисом.  
+[Обучение модели.](https://keras.io/examples/vision/image_classification_from_scratch/)  
 [Данные](https://drive.google.com/file/d/1PW9uFmww8G9-BwVFwnTitdTFCusx4OuU/view?usp=sharing)
 
 **Результат:** 
@@ -40,8 +43,13 @@ Predictive analytics practice repo for computer vision students
 Результат обучения (модель) сохраняется локально.  
 Скрипт предсказания использует обученную модель для бинарной классификации.
 
-5. Валидация модели. 
-Добавление новых данных. 
-Мониторинг метрик и производительности модели.  
+5. Валидация модели  
+Обучение модели на стороннем сервере.  
+Генерация отчетов о метриках и производительности модели.    
 
-**Результат:** скрипт валидации модели validate.py, деплой модели на препродакшн сервер.   
+**Результат:** обучение модели на стороннем сервере. 
+Скрипт валидации модели validate.py
+
+6. Контейнеризация с Docker
+7. MlFlow
+8. 
