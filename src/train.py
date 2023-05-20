@@ -5,15 +5,15 @@ from model import make_model
 
 
 @click.command()
-@click.option('-i', '--in_dir', default="data\\processed\\PetImages")
-@click.option('-o', '--out_dir', default="models\\my_model")
+@click.option('-i', '--data_dir', default="data\\processed\\PetImages")
+@click.option('-o', '--model_dir', default="models\\my_model")
 @click.option('-e', '--epochs', default=4)
 @click.option('-l', '--lr', default=1e-3)
 @click.option('-b', '--batch_size', default=2)
 @click.option('-s', '--image_size', default=180)
-def train(in_dir, out_dir, epochs, lr, batch_size, image_size):
+def train(data_dir, model_dir, epochs, lr, batch_size, image_size):
     image_size = (image_size, image_size)
-    train_model(in_dir, out_dir, epochs, lr, batch_size, image_size)
+    train_model(data_dir, model_dir, epochs, lr, batch_size, image_size)
 
 
 def train_model(in_dir, out_dir, epochs, lr, batch_size, image_size):
