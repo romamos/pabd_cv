@@ -15,8 +15,9 @@ import click
 @click.option('-n', '--n_img', default=20)
 @click.option('-f', '--filter_corrupted', default=False)
 def process_data(in_dir, out_dir, n_img):
-    # make_out_dir(out_dir)
+    make_out_dir(out_dir)
     copy_imgs(in_dir, out_dir, n_img)
+    filter_corrupted(out_dir)
 
 
 def make_out_dir(out_dir):
